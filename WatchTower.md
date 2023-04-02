@@ -11,7 +11,7 @@ It's worth noting that the use of watchtowers is optional. Users can choose not 
 To be safe running a node on Lightning Network connect this WatchTower:
 
 <li>Pubkey: 032b32484f7f279638c3fa58f12d4dc255b6d7cbb08bff1f843a8e4ff2b48f79ab
-<li>address on clear net: 3.126.240.186:9911
+<li>address on clear net: x.xxx.xxx.xxx:xxxx
 <li>address on Tor network: 5632omxc6qlrlxvnwkxt4ca2nfdbx332hrloyjlxg4v7ogqs4wipbeqd.onion:9911
 
 first of all edit your <code> lnd.conf</code> file and set
