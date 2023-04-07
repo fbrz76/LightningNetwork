@@ -10,12 +10,14 @@ It's worth noting that the use of watchtowers is optional. Users can choose not 
 
 To be safe running a node on Lightning Network connect this WatchTower:
 
-<li>Pubkey: 032b32484f7f279638c3fa58f12d4dc255b6d7cbb08bff1f843a8e4ff2b48f79ab
-<li>address on clear net: x.xxx.xxx.xxx:xxxx
-<li>address on Tor network: 5632omxc6qlrlxvnwkxt4ca2nfdbx332hrloyjlxg4v7ogqs4wipbeqd.onion:9911
+If you need a watchtower on the onion network:
+<li>Pubkey: <code>032b32484f7f279638c3fa58f12d4dc255b6d7cbb08bff1f843a8e4ff2b48f79ab</code>
+<li>Address: <code>5632omxc6qlrlxvnwkxt4ca2nfdbx332hrloyjlxg4v7ogqs4wipbeqd.onion:9911</code>
+<li>I hope you consider donating using qr in the page
+  
+To enable your LN daemon to manage your node then edit your <code> lnd.conf</code> file and:
+<li>set <code> watchtower.active = 1 </code>
+<li>stop and restart your lightning node
+<li>now you use lncli command to connect as follow: <code>lncli wtclient add 032b32484f7f279638c3fa58f12d4dc255b6d7cbb08bff1f843a8e4ff2b48f79ab@5632omxc6qlrlxvnwkxt4ca2nfdbx332hrloyjlxg4v7ogqs4wipbeqd.onion:9911</code>
 
-first of all edit your <code> lnd.conf</code> file and set
-<code> watchtower.active = 1 </code>
-stop and restart your lightning node
-then use lncli command to add as follow:
-<code>lncli wtclient add 032b32484f7f279638c3fa58f12d4dc255b6d7cbb08bff1f843a8e4ff2b48f79ab@5632omxc6qlrlxvnwkxt4ca2nfdbx332hrloyjlxg4v7ogqs4wipbeqd.onion:9911</code> or any other you use software to manage your node. I'll tell about them later.
+You can find a more detailed guide on how to setup a watchtower <a href="https://docs.lightning.engineering/lightning-network-tools/lnd/watchtower">here.</a>
