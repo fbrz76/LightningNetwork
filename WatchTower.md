@@ -13,7 +13,7 @@ To be safe running a node on Lightning Network connect this WatchTower:
 If you need a watchtower on the onion network:
 <li>Pubkey: <code>03b06847b0d56c466555f2c6922a08249f60647fce2d39a36ab2dd0309ac5b1b0d</code>
 <li>Address: <code>ulth7cn7un7wonehii562ar6ov3hilaf5nchvb2ydc5tnsskaluuqyyd.onion:9911</code>
-<li>I hope you consider donating using qr in the page
+<li>I hope you consider donating using qr-code below in the page
   
 To enable your LN daemon to manage your node then edit your <code> lnd.conf</code> file and:
 <li>set <code> watchtower.active = 1 </code>
@@ -21,3 +21,7 @@ To enable your LN daemon to manage your node then edit your <code> lnd.conf</cod
 <li>now you use lncli command to connect as follow: <code>lncli wtclient add 03b06847b0d56c466555f2c6922a08249f60647fce2d39a36ab2dd0309ac5b1b0d@ulth7cn7un7wonehii562ar6ov3hilaf5nchvb2ydc5tnsskaluuqyyd.onion:9911</code>
 
 You can find a more detailed guide on how to setup a watchtower <a href="https://docs.lightning.engineering/lightning-network-tools/lnd/watchtower">here.</a>
+
+<img src="https://www.frznode.com/watchtower-donate.png" alt="LNURL" style="height: 300px; width:300px;"/>  
+  
+LNURL1DP68GURN8GHJ7MR9VAJKUEPWD3HXY6T5WVHXXMMD9AKXUATJD3CZ7322WDUHGNG77AJHZ
